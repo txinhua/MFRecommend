@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525550B2256BE33F00A3E770 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525550B1256BE33F00A3E770 /* StringExt.swift */; };
 		5264A5632513A211004E004F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A5622513A211004E004F /* AppDelegate.swift */; };
 		5264A5652513A211004E004F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A5642513A211004E004F /* SceneDelegate.swift */; };
 		5264A5672513A211004E004F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A5662513A211004E004F /* ContentView.swift */; };
@@ -15,6 +16,8 @@
 		5264A56F2513A21A004E004F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5264A56D2513A21A004E004F /* LaunchScreen.storyboard */; };
 		5264A57A2513A21A004E004F /* MFRecommendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A5792513A21A004E004F /* MFRecommendsTests.swift */; };
 		5264A5852513A21A004E004F /* MFRecommendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264A5842513A21A004E004F /* MFRecommendsUITests.swift */; };
+		52AA466E256BFAEB0086CC66 /* NodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA466D256BFAEB0086CC66 /* NodeList.swift */; };
+		52AA4670256C04730086CC66 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA466F256C04730086CC66 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		525550B1256BE33F00A3E770 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		5264A55F2513A211004E004F /* MFRecommends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFRecommends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5264A5622513A211004E004F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5264A5642513A211004E004F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		5264A5802513A21A004E004F /* MFRecommendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFRecommendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5264A5842513A21A004E004F /* MFRecommendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFRecommendsUITests.swift; sourceTree = "<group>"; };
 		5264A5862513A21A004E004F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52AA466D256BFAEB0086CC66 /* NodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeList.swift; sourceTree = "<group>"; };
+		52AA466F256C04730086CC66 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				5264A56D2513A21A004E004F /* LaunchScreen.storyboard */,
 				5264A5702513A21A004E004F /* Info.plist */,
 				5264A56A2513A21A004E004F /* Preview Content */,
+				525550B1256BE33F00A3E770 /* StringExt.swift */,
+				52AA466D256BFAEB0086CC66 /* NodeList.swift */,
+				52AA466F256C04730086CC66 /* Stack.swift */,
 			);
 			path = MFRecommends;
 			sourceTree = "<group>";
@@ -269,6 +278,9 @@
 			files = (
 				5264A5632513A211004E004F /* AppDelegate.swift in Sources */,
 				5264A5652513A211004E004F /* SceneDelegate.swift in Sources */,
+				52AA466E256BFAEB0086CC66 /* NodeList.swift in Sources */,
+				525550B2256BE33F00A3E770 /* StringExt.swift in Sources */,
+				52AA4670256C04730086CC66 /* Stack.swift in Sources */,
 				5264A5672513A211004E004F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,11 +451,12 @@
 				DEVELOPMENT_TEAM = ZB6S7V5DXY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MFRecommends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.-.MFRecommends";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MFRecommends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,11 +472,12 @@
 				DEVELOPMENT_TEAM = ZB6S7V5DXY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MFRecommends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.-.MFRecommends";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MFRecommends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
